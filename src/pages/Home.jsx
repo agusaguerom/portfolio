@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <div className="containerInfo">
                 <div className="containerTitulo">
-                    <h1 className="tituloNombre">NOMBRE <br /> <span className="spanNombre">APELLIDO</span></h1>
+                    <h1 className="tituloNombre">LOREM <br /> <span className="spanNombre">IPSUM</span></h1>
                 </div>
 
                 <div className="containerMain">
