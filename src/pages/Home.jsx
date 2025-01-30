@@ -4,6 +4,7 @@ import Projects from "../components/Projects/Projects";
 export default function Home() {
     return (
         <>
+        
             <div className="containerInfo">
                 <div className="containerTitulo">
                     <h1 className="tituloNombre">LOREM <br /> <span className="spanNombre">IPSUM</span></h1>
