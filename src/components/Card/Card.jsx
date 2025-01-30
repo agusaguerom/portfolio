@@ -23,7 +23,7 @@ export default function Card({titulo,img, texto,linkgithub,  icons = [], colors=
           <p className="parrafo">{texto}</p>
             <div className="botones">
             <ButtonCard link={linkgithub} icon={FaGithub} text={"Codigo"}/>
-            <ButtonCard link={"github.com"} icon={CiLink} text={"Enlace"}/>
+            { /*<ButtonCard link={"github.com"} icon={CiLink} text={"Enlace"}/>*/ }
             </div>
         </div>
       </div>

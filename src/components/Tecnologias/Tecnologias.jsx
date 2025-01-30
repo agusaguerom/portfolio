@@ -8,6 +8,8 @@ import {
   FaNode,
   FaGitAlt,
   FaGithub,
+  FaHtml5,
+  FaCss3
 } from "react-icons/fa";
 import { SiAdobephotoshop, SiSqlite, SiMysql } from "react-icons/si";
 
@@ -23,6 +25,8 @@ export default function Tecnologias() {
   const [photoshopHovered, setPhotoshopHovered] = useState(false);
   const [sqliteHovered, setSqliteHovered] = useState(false);
   const [mysqlHovered, setMysqliteHovered] = useState(false);
+  const [htmlHovered, seHtmlHovered] = useState(false);
+  const [cssHovered, setCssHovered] = useState(false);
 
   return (
     <>
@@ -35,6 +39,24 @@ export default function Tecnologias() {
               onMouseLeave={() => setJavaHovered(false)}
               style={{
                 color: javaHovered ? "#5382a1" : "#a3a3a3",
+                transition: "color 0.3s ease",
+              }}
+            />
+              <FaHtml5
+              title="HTML5"
+              onMouseEnter={() => seHtmlHovered(true)}
+              onMouseLeave={() => seHtmlHovered(false)}
+              style={{
+                color: htmlHovered ? "#ff6347" : "#a3a3a3",
+                transition: "color 0.3s ease",
+              }}
+            />
+               <FaCss3
+              title="CSS"
+              onMouseEnter={() => setCssHovered(true)}
+              onMouseLeave={() => setCssHovered(false)}
+              style={{
+                color: cssHovered ? "#264de4" : "#a3a3a3",
                 transition: "color 0.3s ease",
               }}
             />
