@@ -21,30 +21,13 @@ export default function Navbar() {
             onMouseLeave={() => setIsHoveredHome(false)}
           >
             <a
-              href="https://stackoverflow.com/questions/56636280/how-to-style-react-icons"
+              href="#inicio"
               className="link"
             >
               {isHoveredHome ? (
-                <CiHome size={40} style={{ color: "#ff9c9c" }} />
+                <CiHome title="Inicio" size={40} style={{ color: "#ff9c9c" }} />
               ) : (
                 <CiHome size={32} />
-              )}
-            </a>
-          </div>
-
-          <div
-            className="containerIcon"
-            onMouseEnter={() => setIsHoveredCategory(true)}
-            onMouseLeave={() => setIsHoveredCategory(false)}
-          >
-            <a
-              href="https://stackoverflow.com/questions/56636280/how-to-style-react-icons"
-              className="link"
-            >
-              {isHoveredCategory ? (
-                <BiSolidCategoryAlt size={40} style={{ color: "#ff9c9c" }} />
-              ) : (
-                <BiSolidCategoryAlt size={32} />
               )}
             </a>
           </div>
@@ -55,16 +38,35 @@ export default function Navbar() {
             onMouseLeave={() => setIsHoveredCode(false)}
           >
             <a
-              href="https://stackoverflow.com/questions/56636280/how-to-style-react-icons"
+              href="#tecnologias"
               className="link"
             >
               {isHoveredCode ? (
-                <FaCode size={40} style={{ color: "#ff9c9c" }} />
+                <FaCode title="Tecnologias" size={40} style={{ color: "#ff9c9c" }} />
               ) : (
                 <FaCode size={32} />
               )}
             </a>
           </div>
+
+          <div
+            className="containerIcon"
+            onMouseEnter={() => setIsHoveredCategory(true)}
+            onMouseLeave={() => setIsHoveredCategory(false)}
+          >
+            <a
+              href="#proyectos"
+              className="link"
+            >
+              {isHoveredCategory ? (
+                <BiSolidCategoryAlt title="Proyectos" size={40} style={{ color: "#ff9c9c" }} />
+              ) : (
+                <BiSolidCategoryAlt size={32} />
+              )}
+            </a>
+          </div>
+
+       
 
           <div
             className="containerIcon"
@@ -76,7 +78,7 @@ export default function Navbar() {
               className="link"
             >
               {isHoveredGithub ? (
-                <FaGithub size={40} style={{ color: "#ff9c9c" }} />
+                <FaGithub title="Github"  size={40} style={{ color: "#ff9c9c" }} />
               ) : (
                 <FaGithub size={32} />
               )}

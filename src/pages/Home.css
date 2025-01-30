@@ -1,3 +1,47 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #000;
+}
+
+html::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #000;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #e77070;
+}
+
+span {
+    padding: 64px;
+    background: linear-gradient(to right, hsl(0, 100%, 70%) 0, hsl(0, 100%, 90%) 10%, hsl(0, 78%, 73%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
+
 .tituloNombre {
     text-align: center;
     margin: 20px;

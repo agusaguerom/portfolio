@@ -5,9 +5,9 @@ export default function Home() {
     return (
         <>
         
-            <div className="containerInfo">
-                <div className="containerTitulo">
-                    <h1 className="tituloNombre">LOREM <br /> <span className="spanNombre">IPSUM</span></h1>
+            <div className="containerInfo"> 
+                <div className="containerTitulo" id="inicio">
+                    <h1 className="tituloNombre">AGUSTIN <br /> <span className="spanNombre">AGÜERO</span></h1>
                 </div>
 
                 <div className="containerMain">
@@ -17,13 +17,13 @@ export default function Home() {
                 </div>
 
                 {/* Nuevo contenedor para elementos adicionales */}
-                <div className="Tecnologias">
+                <div className="Tecnologias" id="tecnologias">
                     <h1 className="tituloTecnologias">Tecnologias</h1>
 
                     <Tecnologias/>
                 </div>
 
-                <div className="Proyectos">
+                <div className="Proyectos" id="proyectos">
                     <h1 className="tituloProyectos">Proyectos</h1>
                         <Projects/>
                 </div>
