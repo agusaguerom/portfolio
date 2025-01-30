@@ -4,12 +4,12 @@ import { CiLink } from "react-icons/ci";
 
 import ButtonCard from "../ButtonCard/ButtonCard";
 
-export default function Card({titulo, texto, icons = [], colors=[]}) {
+export default function Card({titulo,img, texto,linkgithub, icons = [], colors=[]}) {
   return (
     <div className="containerProjects">
       <div className="projects">
         <div className="imgProjects">
-          <img src="https://fakeimg.pl/550x450/" alt="Project" />
+          <img src={img} alt={titulo} />
         </div>
 
         <div className="information">
@@ -22,7 +22,7 @@ export default function Card({titulo, texto, icons = [], colors=[]}) {
           </small>          
           <p className="parrafo">{texto}</p>
             <div className="botones">
-            <ButtonCard link={"github.com"} icon={FaGithub} text={"Codigo"}/>
+            <ButtonCard link={linkgithub} icon={FaGithub} text={"Codigo"}/>
             <ButtonCard link={"github.com"} icon={CiLink} text={"Enlace"}/>
             </div>
         </div>
