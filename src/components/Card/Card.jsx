@@ -4,7 +4,7 @@ import { CiLink } from "react-icons/ci";
 
 import ButtonCard from "../ButtonCard/ButtonCard";
 
-export default function Card({titulo,img, texto,linkgithub, icons = [], colors=[]}) {
+export default function Card({titulo,img, texto,linkgithub,  icons = [], colors=[]}) {
   return (
     <div className="containerProjects">
       <div className="projects">
