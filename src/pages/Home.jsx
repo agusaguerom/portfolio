@@ -1,6 +1,8 @@
 import "./Home.css";
 import Tecnologias from "../components/Tecnologias/Tecnologias";
 import Projects from "../components/Projects/Projects";
+import { FaUserPen } from "react-icons/fa6";
+
 export default function Home() {
     return (
         <>
@@ -12,20 +14,24 @@ export default function Home() {
 
                 <div className="containerMain">
                     <p className="parrafoNombre">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias debitis, sint, nobis amet quos possimus soluta velit eos, perferendis asperiores animi. Ut corporis aperiam dolor officiis, exercitationem sint nihil unde!
+                        Estudiante de Analista de Sistemas con experiencia en desarrollo de aplicacionse tanto de web como de escritorio.Interesado en la programacion, bases de datos y el desarrollo de soluciones eficientes.
                     </p>
                 </div>
 
                 {/* Nuevo contenedor para elementos adicionales */}
                 <div className="Tecnologias" id="tecnologias">
-                    <h1 className="tituloTecnologias">Tecnologias</h1>
+                    <h1 className="tituloTecnologias">TECNOLOGIAS</h1>
 
                     <Tecnologias/>
                 </div>
 
                 <div className="Proyectos" id="proyectos">
-                    <h1 className="tituloProyectos">Proyectos</h1>
+                    <h1 className="tituloProyectos">PROYECTOS</h1>
                         <Projects/>
+                </div>
+
+                <div className="Proyectos" id="proyectos">
+                    <h1 className="tituloAcerca"> <FaUserPen size={25}/>  Sobre mi</h1>
                 </div>
             </div>
         </>

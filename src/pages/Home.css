@@ -88,12 +88,12 @@ span {
 
 
 
-.tituloTecnologias, .tituloProyectos
+.tituloTecnologias, .tituloProyectos, .tituloAcerca
 {
     text-align: center;
     color: #ff9c9c;
 }
 
-.tituloProyectos{
+.tituloProyectos, .tituloAcerca{
     margin-top: 40px;
 }
