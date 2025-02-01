@@ -11,12 +11,12 @@ export default function Home() {
         
             <div className="containerInfo"> 
                 <div className="containerTitulo" id="inicio">
-                    <h1 className="tituloNombre">AGUSTIN <br /> <span className="spanNombre">AGÜERO</span></h1>
+                    <h1 className="tituloNombre">AGUSTÍN<br /> <span className="spanNombre">AGÜERO</span></h1>
                 </div>
 
                 <div className="containerMain">
                     <p className="parrafoNombre">
-                        Estudiante de Analista de Sistemas con experiencia en desarrollo de aplicacionse tanto de web como de escritorio. Interesado en la programacion, bases de datos y el desarrollo de soluciones eficientes.
+                    Estudiante de Analista de Sistemas con experiencia en desarrollo de aplicaciones tanto de web como de escritorio. Interesado en la programación, bases de datos y el desarrollo de soluciones eficientes.
                     </p>
                 </div>
 

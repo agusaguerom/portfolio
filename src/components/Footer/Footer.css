@@ -45,8 +45,12 @@
     .footer {
       flex-direction: column;
       align-items: center;
+      
     }
   
+    .footer-text{
+      display: none;
+    }
     .footer-links {
       justify-content: center;
       margin-top: 0.5rem;

@@ -1,11 +1,16 @@
+* {
+  box-sizing: border-box; 
+}
+
 .containerAbout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; 
-  max-width: 800px; 
-  padding: 20px; 
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  overflow-x: hidden; 
 }
 
 .containerAbout p {
@@ -14,7 +19,7 @@
   align-items: center;
   color: #8b8b8b;
   margin-top: 3px;
-  line-height: 1.6; 
+  line-height: 1.6;
   text-align: justify;
 }
 
@@ -25,19 +30,19 @@ strong {
 
 @media (max-width: 1024px) {
   .containerAbout p {
-    font-size: 1.1em; 
-    text-align: justify; 
+    font-size: 1.1em;
+    text-align: justify;
   }
 }
 
 @media (max-width: 768px) {
   .containerAbout {
-    padding: 15px; 
+    padding: 15px;
   }
 
   .containerAbout p {
-    font-size: 1em; 
-    text-align: justify; 
+    font-size: 1em;
+    text-align: justify;
   }
 }
 
