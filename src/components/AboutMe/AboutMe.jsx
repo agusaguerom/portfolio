@@ -1,5 +1,4 @@
 import "./AboutMe.css"
-import midu from "../../assets/img/1561955.jpg";
 
 export default function AboutMe() {
   return (
