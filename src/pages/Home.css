@@ -1,99 +1,149 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #000;
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #000;
 }
 
-html::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #000;
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
 }
 
-html::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #e77070;
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #e77070;
 }
 
 span {
-    padding: 64px;
-    background: linear-gradient(to right, hsl(0, 100%, 70%) 0, hsl(0, 100%, 90%) 10%, hsl(0, 78%, 73%) 20%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 3s infinite linear;
-  }
-  
-  @keyframes shine {
-    0% {
+  padding: 64px;
+  background: linear-gradient(to right, hsl(0, 100%, 70%) 0, hsl(0, 100%, 90%) 10%, hsl(0, 78%, 73%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
       background-position: 0;
-    }
-    60% {
-      background-position: 600px;
-    }
-    100% {
-      background-position: 600px;
-    }
   }
+  60% {
+      background-position: 600px;
+  }
+  100% {
+      background-position: 600px;
+  }
+}
 
 .tituloNombre {
-    text-align: center;
-    margin: 20px;
-    font-size: 4em;
+  text-align: center;
+  margin: 20px;
+  font-size: 4em;
 }
 
 .spanNombre {
-    color: #ff9c9c;
+  color: #ff9c9c;
 }
 
 .containerInfo {
-    display: flex;
-    flex-direction: column; /* Cambia la dirección a columna */
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .containerMain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
 }
 
 .parrafoNombre {
-    font-size: 1.3em;
-    justify-content: center;
-    align-items: center;
-    color: grey;
-    margin-top: 3px;
-    margin-left: 20px;
-    text-align: center;
+  font-family: "Onest", serif;
+  font-size: 1.3em;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  margin-top: 3px;
+  margin-left: 20px;
+  text-align: center;
 }
 
 .containerAdditional {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-top: 20px;
 }
 
-
-
-.tituloTecnologias, .tituloProyectos, .tituloAcerca
-{
-    text-align: center;
-    color: #ff9c9c;
+.tituloTecnologias, .tituloProyectos, .tituloAcerca {
+  text-align: center;
+  color: #ff9c9c;
 }
 
-.tituloProyectos, .tituloAcerca{
-    margin-top: 40px;
+.tituloProyectos, .tituloAcerca {
+  margin-top: 40px;
+}
+
+.tituloTecnologias, .tituloProyectos, .tituloAcerca {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 1024px) {
+  .containerMain, .containerAdditional {
+      width: 80%; 
+  }
+
+  .tituloNombre {
+      font-size: 3.5em; 
+  }
+
+  .parrafoNombre {
+      font-size: 1.2em; 
+}
+
+@media (max-width: 768px) {
+  .containerMain, .containerAdditional {
+      width: 90%; 
+  }
+
+  .tituloNombre {
+      font-size: 3em; 
+  }
+
+  .parrafoNombre {
+      font-size: 1.1em; 
+  }
+
+  .tituloTecnologias, .tituloProyectos, .tituloAcerca {
+      font-size: 1.8em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .containerMain, .containerAdditional {
+      width: 100%; 
+  }
+
+  .tituloNombre {
+      font-size: 2.5em; 
+  }
+
+  .parrafoNombre {
+      font-size: 1em; 
+  }
+
+  .tituloTecnologias, .tituloProyectos, .tituloAcerca {
+      font-size: 1.5em; 
+  }
 }

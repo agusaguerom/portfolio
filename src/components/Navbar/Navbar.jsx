@@ -4,12 +4,15 @@ import { BiSolidCategoryAlt } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import { FaUserPen } from "react-icons/fa6";
+
 
 export default function Navbar() {
   const [isHoveredHome, setIsHoveredHome] = useState(false);
   const [isHoveredCategory, setIsHoveredCategory] = useState(false);
   const [isHoveredCode, setIsHoveredCode] = useState(false);
   const [isHoveredGithub, setIsHoveredGithub] = useState(false);
+  const [isHoveredUser, setIsHoveredUser] = useState(false);
 
   return (
     <>
@@ -66,7 +69,22 @@ export default function Navbar() {
             </a>
           </div>
 
-       
+          <div
+            className="containerIcon"
+            onMouseEnter={() => setIsHoveredUser(true)}
+            onMouseLeave={() => setIsHoveredUser(false)}
+          >
+            <a
+              href="#aboutme"
+              className="link"
+            >
+              {isHoveredUser ? (
+                <FaUserPen title="Sobre Mi" size={40} style={{ color: "#ff9c9c" }} />
+              ) : (
+                <FaUserPen size={32} />
+              )}
+            </a>
+          </div>
 
           <div
             className="containerIcon"

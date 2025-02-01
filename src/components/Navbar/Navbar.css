@@ -1,25 +1,55 @@
-.containerNav{
+.containerNav {
     margin: 0 auto;
-    margin-top: 10px ;
+    margin-top: 10px;
     display: block;
     border: 2px solid whitesmoke;
     border-radius: 30px;
-    width: 250px;
+    width: 300px;
+    padding: 10px; /* Se mantiene sin cambiar tamaño */
 }
 
-
-.link{
+.link {
     text-decoration: none;
     color: white;
 }
 
-.IconsNav{
+.IconsNav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.containerIcon{
+.containerIcon {
     margin: 10px;
 }
 
+@media (max-width: 768px) {
+    .containerNav {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    .IconsNav {
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    }
+
+    .containerIcon {
+        margin: 8px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .containerNav {
+        width: 100%; 
+    }
+
+    .IconsNav {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .containerIcon {
+        margin: 5px 0;
+    }
+}

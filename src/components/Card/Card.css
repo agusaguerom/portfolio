@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px; /* Añadido para mayor espaciado en pantallas pequeñas */
 }
 
 .projects {
@@ -12,6 +13,7 @@
   text-align: left;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
+  width: 100%; /* Para asegurarse de que no se desborde en pantallas pequeñas */
 }
 
 .imgProjects img {
@@ -19,11 +21,11 @@
   height: 100%;
   border-radius: 8px;
   object-fit: cover;
-
 }
 
 .information {
   margin-left: 20px;
+  flex-grow: 1; /* Para que el contenido ocupe el espacio disponible */
 }
 
 .titulo {
@@ -32,23 +34,107 @@
   color: #f1e8f7;
   margin-bottom: 10px;
 }
- small{
+
+small {
   text-align: center;
   margin-left: 6px;
   font-size: 1.5em;
 }
 
-small .icon{
+small .icon {
   margin-right: 10px;
 }
 
-
-.parrafo{
+.parrafo {
   margin-top: 5px;
   color: grey;
 }
 
-.botones{
+.botones {
   display: flex;
   gap: 10px;
+}
+
+/* Para pantallas medianas (tablets) y más pequeñas */
+@media (max-width: 1024px) {
+  .projects {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* Espaciado vertical entre imagen y texto */
+  }
+
+  .imgProjects img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .information {
+    margin-left: 0;
+    text-align: center; /* Centrar el texto en pantallas pequeñas */
+  }
+
+  .titulo {
+    font-size: 1.5em;
+  }
+
+  small {
+    font-size: 1.2em;
+  }
+
+  .parrafo {
+    font-size: 0.9em;
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    gap: 15px; /* Espaciado vertical más pequeño */
+  }
+
+  .imgProjects img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .information {
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 1.2em;
+  }
+
+  small {
+    font-size: 1.1em;
+  }
+
+  .parrafo {
+    font-size: 0.85em;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Para pantallas muy pequeñas (móviles con resolución baja) */
+@media (max-width: 480px) {
+  .projects {
+    gap: 10px; /* Espaciado aún más pequeño */
+  }
+
+  .titulo {
+    font-size: 1.1em;
+  }
+
+  small {
+    font-size: 1em;
+  }
+
+  .parrafo {
+    font-size: 0.8em;
+  }
 }

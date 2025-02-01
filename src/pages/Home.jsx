@@ -2,6 +2,8 @@ import "./Home.css";
 import Tecnologias from "../components/Tecnologias/Tecnologias";
 import Projects from "../components/Projects/Projects";
 import { FaUserPen } from "react-icons/fa6";
+import AboutMe from "../components/AboutMe/AboutMe";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
     return (
@@ -14,25 +16,29 @@ export default function Home() {
 
                 <div className="containerMain">
                     <p className="parrafoNombre">
-                        Estudiante de Analista de Sistemas con experiencia en desarrollo de aplicacionse tanto de web como de escritorio.Interesado en la programacion, bases de datos y el desarrollo de soluciones eficientes.
+                        Estudiante de Analista de Sistemas con experiencia en desarrollo de aplicacionse tanto de web como de escritorio. Interesado en la programacion, bases de datos y el desarrollo de soluciones eficientes.
                     </p>
                 </div>
 
                 {/* Nuevo contenedor para elementos adicionales */}
                 <div className="Tecnologias" id="tecnologias">
-                    <h1 className="tituloTecnologias">TECNOLOGIAS</h1>
+                    <h1 className="tituloTecnologias">Tecnologías</h1>
 
                     <Tecnologias/>
                 </div>
 
                 <div className="Proyectos" id="proyectos">
-                    <h1 className="tituloProyectos">PROYECTOS</h1>
+                    <h1 className="tituloProyectos">Proyectos</h1>
                         <Projects/>
                 </div>
 
-                <div className="Proyectos" id="proyectos">
-                    <h1 className="tituloAcerca"> <FaUserPen size={25}/>  Sobre mi</h1>
+                <div className="aboutme" id="aboutme">
+                    <h1 className="tituloAcerca"> <FaUserPen size={25}/>  Sobre mí</h1>
+                    <AboutMe/>
+
                 </div>
+
+                <Footer/>
             </div>
         </>
     );
