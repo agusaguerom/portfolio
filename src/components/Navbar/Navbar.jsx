@@ -92,7 +92,7 @@ export default function Navbar() {
             onMouseLeave={() => setIsHoveredGithub(false)}
           >
             <a
-              href="https://github.com/agusaguerom28"
+              href="https://github.com/agusaguerom"
               className="link"
             >
               {isHoveredGithub ? (

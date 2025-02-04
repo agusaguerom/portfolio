@@ -9,7 +9,7 @@ export default function Footer(){
   </span>
   <ul className="footer-links">
     <li><a href="#aboutme" className="footer-link">Sobre mí</a></li>
-    <li><a href="https://github.com/agusaguerom28" className="footer-link">Github</a></li>
+    <li><a href="https://github.com/agusaguerom" className="footer-link">Github</a></li>
   </ul>
 </div>
 
