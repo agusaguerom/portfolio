@@ -5,7 +5,7 @@ export default function Footer(){
         <>
         <div className="footer">
   <span className="footer-text">
-    © 2024 <a href="https://midu.dev/" className="footer-link">Agustin Aguero</a>.
+    © 2024 <a href="#" className="footer-link">Agustin Aguero</a>.
   </span>
   <ul className="footer-links">
     <li><a href="#aboutme" className="footer-link">Sobre mí</a></li>
